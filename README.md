@@ -7,4 +7,6 @@
 - SQLlite Database Libraqries: SQLalchemy
 
 ## Execution
-1. Run the following comman
+1. Run the following commands within the project directory:
+- python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
+- python train_classifier.py ../data/DisasterResponse.db classifier.pkl
