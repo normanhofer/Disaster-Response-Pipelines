@@ -19,7 +19,7 @@ The project is based on real messages that were sent during disaster events, pro
 ## Installation
 
 Clone this repository:
-`git clone` https://github.com/normanhofer/Disaster-Response-Pipelines.git
+`git clone https://github.com/normanhofer/Disaster-Response-Pipelines.git`
 
 ## Execution
 1. Run the following commands within the project directory:
@@ -31,6 +31,7 @@ Clone this repository:
 # Exemplary Process 
 
 1. Type in a text message into the input field of the web app:
-xxxPICxxx
+
+
 2. After clicking the "Classify message" button the message will be classified and the related categories will be highlighted in green:
 xxxPICxxx
