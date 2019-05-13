@@ -9,10 +9,10 @@ The project is based on real messages that were sent during disaster events, pro
 
 ## Dependencies
 - Python 3
-- Machine Learning Libraries: Pandas, Sikit-Learn
-- Natural Language Processing Libraries: NLTK
+- Machine Learning: Pandas, scikit-learn
+- Natural Language Processing: NLTK
 - Web App and Data Visualization: Flask
-- SQLlite Database Libraqries: SQLalchemy
+- SQLlite Database: SQLalchemy
 - Using regular expressions: re
 - Modify Python runtime environment: sys
 
