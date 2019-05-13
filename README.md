@@ -23,7 +23,7 @@ Clone this repository:
 
 ## Execution
 1. Run the following commands within the project directory:
-  - python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
-  - python train_classifier.py ../data/DisasterResponse.db classifier.pkl
-2. Start the app via running the following command in the directory of the app: python run.py 
+  - `python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db`
+  - `python train_classifier.py ../data/DisasterResponse.db classifier.pkl`
+2. Start the app via running the following command in the directory of the app: `python run.py`
 3. Visit the following url: http://0.0.0.0:3001/
