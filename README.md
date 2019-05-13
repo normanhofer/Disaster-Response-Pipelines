@@ -26,7 +26,7 @@ Clone this repository:
   - Start the ETL pipeline `python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db`
   - Start the Machine Learning pipeline `python train_classifier.py ../data/DisasterResponse.db classifier.pkl`
   - Start the web app `python run.py`
-3. Visit the following url: http://0.0.0.0:3001/
+2. Visit the following url: http://0.0.0.0:3001/
 
 # Exemplary Process 
 
