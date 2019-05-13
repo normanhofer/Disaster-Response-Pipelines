@@ -19,7 +19,7 @@ The project is based on real messages that were sent during disaster events, pro
 ## Installation
 
 Clone this repository:
-git clone https://github.com/normanhofer/Disaster-Response-Pipelines.git
+`git clone` https://github.com/normanhofer/Disaster-Response-Pipelines.git
 
 ## Execution
 1. Run the following commands within the project directory:
