@@ -31,7 +31,7 @@ Clone this repository:
 ## Exemplary Process 
 
 1. Type in a text message into the input field of the web app:
-
+![alt text](https://github.com/normanhofer/Disaster-Response-Pipelines/blob/master/Screenshots/1.PNG)
 
 2. After clicking the "Classify message" button the message will be classified and the related categories will be highlighted in green:
-xxxPICxxx
+![alt text](https://github.com/normanhofer/Disaster-Response-Pipelines/blob/master/Screenshots/2.PNG)
