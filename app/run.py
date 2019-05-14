@@ -85,7 +85,8 @@ def index():
                     'title': "Category",
                     'tickangle': 35
                 }
-            }      
+            }   
+        }
     ]
 
     # encode plotly graphs in JSON
