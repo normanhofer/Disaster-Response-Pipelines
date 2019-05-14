@@ -39,13 +39,14 @@ model = joblib.load("../models/model.pkl")
 @app.route('/index')
 def index():
     
+    # Plot 1
     # extract data needed for visuals
-    # TODO: Below is an example - modify to extract data for your own visuals
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
+    categories = df.iloc[:,4:].columns
+    category_dummy = (df.iloc[:,4:] != 0).sum().values
     
-    # create visuals
-    # TODO: Below is an example - modify to create your own visuals
+    # Plot 1
     graphs = [
         {
             'data': [
@@ -64,16 +65,35 @@ def index():
                     'title': "Genre"
                 }
             }
-        }
+        },
+        
+        # Plot 2
+        {
+            'data': [
+                Bar(
+                    x=categories,
+                    y=category_dummy
+                )
+            ],
+
+            'layout': {
+                'title': 'Message Category Distribution',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Category",
+                    'tickangle': 35
+                }
+            }      
     ]
-    
+
     # encode plotly graphs in JSON
     ids = ["graph-{}".format(i) for i, _ in enumerate(graphs)]
     graphJSON = json.dumps(graphs, cls=plotly.utils.PlotlyJSONEncoder)
     
     # render web page with plotly graphs
     return render_template('master.html', ids=ids, graphJSON=graphJSON)
-
 
 # web page that handles user query and displays model results
 @app.route('/go')
